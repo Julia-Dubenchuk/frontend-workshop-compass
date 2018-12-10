@@ -1,0 +1,26 @@
+{
+	"name": "frontend-workshop-compass",
+	"private": true,
+	"description": "Compass web application",
+	"version": "1.0.0",
+	"license": "GPL-3.0",
+	"author": "Constantine Genchevsky",
+	"main": "src/index.html",
+	"keywords": [
+		"compass",
+		"webapp",
+		"javascript"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"neutrino": "8.3.0",
+		"@atomspace/eslint": "2.4.0",
+		"@atomspace/stylelint": "1.1.1",
+		"browser-sync": "2.18.8"
+	},
+	"scripts": {
+		"start": "browser-sync start --server \"src\" --files \"src\" --open \"external\" --no-notify --no-ghost-mode",
+		"eslint": "neutrino lint --fix",
+		"stylelint": "neutrino stylelint --fix"
+	}
+}
