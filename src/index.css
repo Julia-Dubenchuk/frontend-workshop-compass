@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'RobotoSlab Regular';
+	src: url('./fonts/RobotoSlab-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RobotoSlab Thin';
+	src: url('./fonts/RobotoSlab-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.direction-name {
+	font-family: 'RobotoSlab Regular', 'Times New Roman', serif;
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: normal;
+}
+
+.text-degrees {
+	font-family: 'RobotoSlab Thin', 'Times New Roman', serif;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 100;
+}
+
+.text-degrees::after {
+	content: "\b0";
+}
+
+.font-color {
+	color: #fff;
+}
+
+.compass {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: #20292e;
+}
+
+.compass-body {
+	display: block;
+	width: 520px;
+	height: 520px;
+	background: url('./images/disc.png') no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.compass-arrow {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 250px;
+	background: url('./images/center.png') no-repeat;
+	background-position: center center;
+}
+
+.position-degrees {
+	position: relative;
+	left: 8px;
+}
